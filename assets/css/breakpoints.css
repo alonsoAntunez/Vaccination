@@ -1,0 +1,101 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*Reverse breakpoints*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .nurseRow .titleContainer h1 {
+        max-width: inherit;
+    }
+
+    .nurseRow .titleContainer h3 {
+        max-width: inherit;
+    }
+
+    .nurseRow .iconsRow .iconContainer {
+        justify-content: center;
+    }
+
+    .whyRow .whyRowTitle p {
+        max-width: inherit;
+    }
+
+    .termsCol {
+        margin-top: 2rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .nurseRow {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .preparationsRow .preparationsText p {
+        max-width: inherit;
+    }
+
+    .emergencyRow .titleRow p {
+        max-width: inherit;
+    }
+
+    footer .titleRow {
+        text-align: center;
+    }
+
+    footer .titleRow p {
+        max-width: inherit;
+        margin-bottom: 2rem;
+    }
+
+    .footerMenu {
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .legalRow {
+        text-align: center;
+    }
+}
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width

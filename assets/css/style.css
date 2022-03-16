@@ -1,0 +1,583 @@
+/*General Styles*/
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.noScroll {
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+body {}
+
+/*General Styles*/
+/*Nav*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+}
+
+.logoContainer a {
+    color: rgba(41, 73, 199, 1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.logoContainer a h1 {
+    font-weight: 700;
+    font-size: 2.7rem;
+    margin-bottom: 0;
+}
+
+header nav .navContainer ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+header nav .navContainer ul li {
+    text-align: center;
+}
+
+header nav .navContainer ul li a {
+    color: rgba(109, 123, 147, 1);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+header nav .navContainer ul li.mobileMenu {
+    text-align: right;
+}
+
+header nav .navContainer ul li.mobileMenu a span {
+    font-size: 1.8rem;
+}
+
+header nav .navContainer ul li a.buttonNav {
+    white-space: nowrap;
+    background: rgba(55, 87, 213, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 1.75rem 2.5rem;
+    border-radius: 15px;
+}
+
+/*Nav*/
+/*Sections styles*/
+.nurseRow {
+    margin-top: -12rem;
+    position: relative;
+}
+
+.nurseRow .titleContainer h1 {
+    color: rgba(31, 62, 114, 1);
+    font-size: 5.688rem;
+    max-width: 585px;
+}
+
+.nurseRow .titleContainer h3 {
+    color: rgba(31, 62, 114, 1);
+    font-size: 1.625rem;
+    line-height: 2.688rem;
+    font-weight: 500;
+    color: rgba(109, 123, 147, 1);
+    max-width: 550px;
+}
+
+.nurseRow .nurseImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nurseRow .nurseImage img {
+    max-width: 100%;
+    width: 110%;
+}
+
+.nurseRow .iconsRow {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.nurseRow .iconsRow .iconContainer {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.nurseRow .iconsRow .iconContainer p {
+    color: rgba(31, 62, 114, 1);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nurseRow .iconsRow .iconContainer i {
+    font-size: 1rem;
+    position: relative;
+    top: -3px;
+    color: rgba(255, 208, 18, 1);
+    background: rgba(255, 249, 226, 1);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 7px 12px -2px #FFFAE3;
+}
+
+.nurseRow .scheduleRow .iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.nurseRow .scheduleRow .iconContainer p {
+    color: rgba(31, 62, 114, 1);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.nurseRow .scheduleRow .iconContainer i {
+    font-size: 1.2rem;
+    position: relative;
+    top: -3px;
+    color: rgba(51, 83, 209, 1);
+    background: rgba(233, 240, 253, 1);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+}
+
+.scheduleForm {
+    position: absolute;
+    top: 80%;
+    width: 67.5%;
+}
+
+.scheduleSelector {
+    margin-left: 0;
+    box-shadow: 0px 7px 12px -2px rgba(51, 83, 209, 0.4);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(51px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 2rem 15px;
+    white-space: nowrap;
+}
+
+.scheduleSelector .iconContainer p {
+    color: rgba(109, 123, 147, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.scheduleSelector .iconContainer i {
+    font-size: 1rem;
+    position: relative;
+    top: -3px;
+    color: rgba(51, 83, 209, 1);
+    background: rgba(233, 240, 253, 1);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+}
+
+.scheduleSelector .titleSelector h3 {
+    color: rgba(31, 62, 114, 1);
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+.scheduleSelector .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduleSelector .buttonContainer button {
+    width: 70%;
+    background: rgba(55, 87, 213, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logosRow {
+    padding-top: 5rem;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.logosRow .logoColContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logosRow .logoColContainer img {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.whyRow {
+    margin-bottom: 7rem;
+}
+
+.whyRow .whyRowTitle h1 {
+    color: rgba(31, 62, 114, 1);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.whyRow .whyRowTitle p {
+    color: rgba(109, 123, 147, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    width: 650px;
+    overflow: hidden;
+}
+
+.whyRow .whyRowCards .card {
+    border: solid rgba(249, 249, 249, 1) 5px;
+    border-radius: 15px;
+    padding: 1.75rem;
+    transition: 300ms;
+    margin-bottom: 2rem;
+    cursor: auto;
+}
+
+.whyRow .whyRowCards .card:hover {
+    border: none;
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+    transition: 300ms;
+    border: solid rgba(255, 255, 255, 1) 5px;
+}
+
+.whyRow .whyRowCards .card:hover .card-body i {
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+    transition: 300ms;
+}
+
+.whyRow .whyRowCards .card .card-body {
+    padding: 0;
+}
+
+.whyRow .whyRowCards .card .card-body i {
+    color: rgba(51, 83, 209, 1);
+    font-size: 2rem;
+    background: rgba(233, 240, 253, 1);
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    transition: 300ms;
+}
+
+.whyRow .whyRowCards .card .card-body h5 {
+    font-size: 1.5rem;
+    color: rgba(31, 62, 114, 1);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    max-width: 250px;
+    cursor: default;
+}
+
+.whyRow .whyRowCards .card .card-body p {
+    font-size: 1.25rem;
+    color: rgba(109, 123, 147, 1);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    cursor: default;
+}
+
+.preparationsRow {
+    margin-bottom: 8rem;
+}
+
+.preparationsRow .imageContainer img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.preparationsRow .preparationsTitle {
+    margin-bottom: 4rem;
+}
+
+.preparationsRow .preparationsText .preparationsTitle h1 {
+    color: rgba(31, 62, 114, 1);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.preparationsRow .preparationsText .preparationsTitle p {
+    color: rgba(109, 123, 147, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 570px;
+}
+
+.preparationItem {
+    border: solid rgba(249, 249, 249, 1) 5px;
+    padding-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.preparationToggles p {
+    font-size: 1.5rem;
+    color: rgba(31, 62, 114, 1);
+    font-weight: 500;
+}
+
+.preparationToggles p i {
+    background: rgba(233, 240, 253, 1);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.preparationToggles p i.iconText {
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+}
+
+.preparationToggles .toggleTitle {}
+
+.preparationToggles .toggleTitle p i.open,
+.preparationToggles .toggleTitle p i.close {
+    float: right;
+}
+
+.preparationToggles .toggleTitle p i.close {
+    display: none;
+    color: rgba(109, 123, 147, 1);
+}
+
+.preparationToggles .toggleDescription {
+    margin-top: 2rem;
+    display: none;
+}
+
+.preparationToggles .toggleDescription p {
+    padding-left: 50px;
+    font-size: 1.25rem;
+    color: rgba(109, 123, 147, 1);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    cursor: default;
+}
+
+.activeToggle {
+    border: solid rgba(255, 255, 255, 0.9) 5px;
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+}
+
+.emergencyRow .imageContainer img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.emergencyRow .titleRow h1 {
+    color: rgba(31, 62, 114, 1);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.emergencyRow .titleRow p {
+    color: rgba(109, 123, 147, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 630px;
+}
+
+.emergencyRow .emergencyRowCards .card {
+    border: solid rgba(249, 249, 249, 1) 5px;
+    transition: 300ms;
+    border-radius: 15px;
+}
+
+.emergencyRow .emergencyRowCards .card:hover {
+    border: solid rgba(255, 255, 255, 1) 5px;
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+    transition: 300ms;
+}
+
+.emergencyRow .emergencyRowCards .card .iconCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emergencyRow .emergencyRowCards .card .iconCard i {
+    color: rgba(51, 83, 209, 1);
+    font-size: 2rem;
+    background: rgba(233, 240, 253, 1);
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    transition: 300ms;
+}
+
+.emergencyRow .emergencyRowCards .card:hover .iconCard i {
+    box-shadow: 0px 7px 12px -2px #e9f0fd;
+}
+
+.emergencyRow .emergencyRowCards .card h4 {
+    font-size: 1.5rem;
+    font-size: 500;
+    color: rgba(31, 62, 114, 1);
+}
+
+.emergencyRow .emergencyRowCards .card p {
+    font-size: 1rem;
+    color: rgba(109, 123, 147, 1);
+    font-weight: 500;
+}
+
+.emergencyRow .emergencyRowCards .card .buttonCard {
+    display: flex;
+    justify-content: center;
+}
+
+.emergencyRow .emergencyRowCards .card .buttonCard button {
+    width: 90%;
+    background: #e9f0fd;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(51, 83, 209, 1);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.emergencyRow .emergencyRowCards .card:hover .buttonCard button {
+    background: rgba(51, 83, 209, 1);
+    color: #e9f0fd;
+    transition: 300ms;
+}
+
+footer {
+    background: rgba(238, 243, 255, 1);
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    margin-top: 12rem !important;
+}
+
+footer .menusRow {
+    margin-bottom: 6rem;
+}
+
+footer .footerMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h1 {
+    color: rgba(41, 73, 199, 1);
+}
+
+footer p {
+    max-width: 250px;
+    font-size: 1.5rem;
+}
+
+footer .footerMenu h2 {
+    font-size: 2rem;
+    color: rgba(31, 62, 114, 1);
+    margin-bottom: 2rem;
+}
+
+footer .footerMenu a {
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: rgba(109, 123, 147, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer .legalRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .legalRow p {
+    margin-bottom: 0;
+}
+
+footer .legalRow p,
+footer .legalRow a {
+    font-size: 1.2rem !important;
+}
+
+footer .legalRow a {
+    color: rgba(109, 123, 147, 1);
+    text-decoration: none;
+}
+
+footer .legalRow p {
+    max-width: inherit;
+}
+
+footer .legalRow .termsCol {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Sections styles*/
